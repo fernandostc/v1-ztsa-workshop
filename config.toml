@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "oyo"
 
-title = "SECURING YOUR APPLICATIONS WITH Trend Micro - Cloud One NETWORK SECURITY"
+title = "Trend Micro Zero Trust Secure Access"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
@@ -15,9 +15,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "Fernando Cardoso and Justin Perkins @ Trend Micro"
+  author = "Fernando Cardoso and Andre Fernandes @ Trend Micro"
   # Description of the site, will be used in meta information
-  description = "Learn how to automate the security into the IaC pipeline and how to bring a better visiblity for possible miconfiguration or possible drift compare with the AWS Well-Architected Framework"
+  description = ""
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar

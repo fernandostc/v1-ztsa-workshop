@@ -7,7 +7,9 @@ pre: "<b>8. </b>"
 
 ### Cleanup your Environment
 
-Now that you have successfully completed this lab, to avoid charges please follow the documentation steps to remove resources deployed during this workshop.
+Now that you have successfully completed this lab, to avoid charges please delete the Cloud Formation Template used to create this demo environment.
 
-Choose the clean up instruction that match your Network Security deployment method.
+You can do this by checking your AWS Management Console > Cloud Formation, then selecting the CFT used in this demo and deleting it.
+
+![Endpoint_Deployment](/images/ztsa-cft-delete.png) 
 
