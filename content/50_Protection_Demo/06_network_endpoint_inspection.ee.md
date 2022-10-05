@@ -1,1 +1,0 @@
-06_network_endpoint_inspection.md

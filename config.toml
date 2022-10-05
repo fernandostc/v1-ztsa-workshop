@@ -44,36 +44,6 @@ enableEmoji = true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> AWS Builders Library"
-url = "https://aws.amazon.com/builders-library/"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Modernization with AWS"
-url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
-weight = 20
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-user-cog'></i> Trend Micro - Cloud One Trial"
-url = "https://cloudone.trendmicro.com/SignUp.screen#"
-weight = 21
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-user-check'></i> AWS Marketplace"
-url = "https://aws.amazon.com/marketplace/pp/Trend-Micro-Trend-Micro-Cloud-One/B01LXMNGHB"
-weight = 22
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-user-graduate'></i> DevOps Resource Center"
-url = "https://www.trendmicro.com/en_us/devops.html"
-weight = 23
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> Youtube - Network Security Your Way"
-url = "https://www.youtube.com/watch?v=m9O4gKxf5HY"
-weight = 24
-
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
@@ -87,13 +57,3 @@ weight = 24
 title = "Self Guided"
 weight = 1
 languageName = "Self Guided"
-
-[Languages.ee]
-title = "Event Engine - Endpoint"
-weight = 2
-languageName = "EE - Endpoint"
-
-[Languages.ami]
-title = "Event Engine - Appliance"
-weight = 3
-languageName = "EE - AMI"
