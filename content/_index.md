@@ -4,8 +4,6 @@ chapter: true
 weight: 2
 ---
 
-# FAQ
-
 ## Trend Micro Zero Trust Secure Access
 ### Redefine trust and secure digital transformation with continuous risk assessments 
 ![TrendMicro](/images/logo.png)
