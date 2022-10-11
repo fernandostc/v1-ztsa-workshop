@@ -67,6 +67,10 @@ Now its time to demonstrate that the Trend Micro Zero Trust Platform is capable 
 
 In this demo we are going to simulate some suspicious activity (access to a malicious website). This event will trigger a Secure Access Rule / Risk Control Rule that will isolate the VPC2_WindowsClient Instance.
 
+Before stating the tests, lets create a new ZTSA Risk Control Rule. This rule must have the following conditions (Suspicious Web Activity in Discovered Devices). The action in case an access to malicious websites or malicious file download activity is detected, it to Isolate the affected endpoint.
 ![Endpoint_Deployment](/images/ztsa-internet-6.png)
 ![Endpoint_Deployment](/images/ztsa-internet-7.png)
 ![Endpoint_Deployment](/images/ztsa-internet-8.png)
+
+After you create the policy, use the same URLs you've used in the previous step (https://wicar.org/test-malware.html), download some of the available malware samples, and wait a few minutes until the Risk Control rule is triggered and the affected device is isolated.
+.
