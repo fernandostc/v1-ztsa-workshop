@@ -24,6 +24,6 @@ The learning objectives of this workshop is to familiarize users with the deploy
 - Tech leads and Program Managers (PM)
 
 
-## AWSWorkshop.io base workshop 
+## AWSWorkshop.io based workshop 
 
 This is a base workshop.  Clone and start from this repo to create your workshop.
