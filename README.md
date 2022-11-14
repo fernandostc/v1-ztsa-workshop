@@ -1,6 +1,5 @@
 ## Trend Micro Zero Trust Secure Access
 ### Redefine trust and secure digital transformation with continuous risk assessments 
-![TrendMicro](/images/logo.png)
 
 With this guide, you’ll learn how to demonstrate the Trend Micro Zero Trust Platform, showing how remote users can remotely connect with remote applications and the internet while using a different approach that implements continuous risk assessment by analyzing threat factors of assets. Access to specific resources can be changed dynamically based on increases or decreases in risk. Trend Micro Vision One™ Risk Insights gathers telemetry and data to automate decisions by leveraging the Trend Micro endpoint agent and network tools.
 
