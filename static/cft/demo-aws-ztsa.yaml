@@ -22,9 +22,11 @@ Parameters:
     Description: AWS - (Linux AMI ID) DO NOT CHANGE THIS VALUE  
   WindowsUsername:
     Description: AWS - Please enter username to be used when accessing the Windows Instances.
+    Default: trendmicro
     Type: 'String'
   WindowsPassword:
     Description: AWS - Please enter password to be used when accessing the Windows Instances (8 characters including capital case, lower cases and special characters).
+    Default: Trend@00p$
     Type: 'String'
   RegistrationToken:
     Type: String
@@ -263,6 +265,18 @@ Resources:
             Invoke-Expression "c:\chrome.exe /silent /install"
             Start-Sleep -Seconds 10
 
+            # Disable Password Complexity
+            secedit /export /cfg c:\secpol.cfg
+            (gc C:\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
+            secedit /configure /db c:\windows\security\local.sdb /cfg c:\secpol.cfg /areas SECURITYPOLICY
+            rm -force c:\secpol.cfg -confirm:$false
+
+            # Disable Password Complexity
+            secedit /export /cfg c:\secpol.cfg
+            (gc C:\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
+            secedit /configure /db c:\windows\security\local.sdb /cfg c:\secpol.cfg /areas SECURITYPOLICY
+            rm -force c:\secpol.cfg -confirm:$false
+
             # Create User
             $Username = "${WindowsUsername}"
             $Password = "${WindowsPassword}"
@@ -307,7 +321,7 @@ Resources:
   ZTNA:
     Type: 'AWS::EC2::Instance'
     Properties:
-      InstanceType: m5.xlarge
+      InstanceType: c5.xlarge
       KeyName: !Ref 'KeyName'
       NetworkInterfaces:
       - DeviceIndex: "0"
@@ -431,6 +445,12 @@ Resources:
             Invoke-WebRequest -Uri ${VisionOneURL} -OutFile c:\basecamp.exe
             Start-Process c:\basecamp.exe
             Start-Sleep -Seconds 10
+
+            # Disable Password Complexity
+            secedit /export /cfg c:\secpol.cfg
+            (gc C:\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
+            secedit /configure /db c:\windows\security\local.sdb /cfg c:\secpol.cfg /areas SECURITYPOLICY
+            rm -force c:\secpol.cfg -confirm:$false
 
             # Create User
             $Username = "${WindowsUsername}"

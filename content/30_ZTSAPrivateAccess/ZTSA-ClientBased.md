@@ -1,8 +1,8 @@
 ---
-title: "ZTSA - Client Based Access - part 3"
+title: "ZTSA - Client Based Access"
 chapter: false
-weight: 33
-pre: "<b>3.3 </b>"
+weight: 31
+pre: "<b>3.1 </b>"
 ---
  
 ### ZTSA – Private Access Control - Testing the Solution
@@ -12,7 +12,7 @@ After you finishing the steps 3.1 and 3.2, open the AWS Management Console and c
 
 With the VPC2_WindowsClient Public IP Address in hands, you must RDP to this EC2 Instance using Terminal Services. Note that the Vision One XDR Agent is installed and monitoring this computer (task manager).
 
-> Connecting to the VPC2 WindowsClient Instance and checking the Vision One XDR Agent status. 
+- Connecting to the VPC2 WindowsClient Instance and checking the Vision One XDR Agent status. 
 
 {{< youtube id="STJEAZ47OL4" >}}
 
@@ -77,7 +77,7 @@ Edit the CONDITION option, and filter for the following Risk Event “Screen Cap
 * Step 4
 As response in case the condition defined on the step 3 is detected, select  the "Add action for private access", and then select the access to all the aplications, except the VPC1_LinuxApp1 applications. After you finish this Risk Control rule creation, save the policy and access again the VPC2_WindowsClient Instance using RDP.
 
-> How to create a Risk Control Rule (Private Access)
+<b>- How to create a Risk Control Rule (Private Access)</b>
 
 {{< youtube id="-6v_YVlgl30" >}}
 

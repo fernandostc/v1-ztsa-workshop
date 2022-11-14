@@ -4,7 +4,6 @@ chapter: true
 weight: 1
 pre: "<b>1. </b>"
 ---
-
 ## TREND MICRO™ ZERO TRUST SECURE ACCESS
 
 As the recent transition to a remote or hybrid workforce has widened the digital attack surface, increasing cyber risk significantly across many organizations, the old adage of “trust, but verify” is no longer practical. The growing interest and movement toward Zero Trust architectures in the past few years has shifted this approach to the more accurate, “never trust, always verify”.
@@ -13,7 +12,6 @@ And for good reason. The broad implicit-trust methods and practices haven’t ke
 methods used to securely connect users, devices, and applications no matter where they are or what they need to access.
 
 ---
-
 ### REVISING TRUST IN YOUR ORGANIZATION
 
 In most organizations, implicit trust is the standard. This opens the organization to considerable risk, where a single compromised identity can begin to wreak havoc in the environment and largely move throughout the network unabated.
@@ -25,35 +23,106 @@ risk in your organization and your current security posture. While more use case
 2. Delivering fast and secure access to cloud applications
 3. Transforming your remote access solution 
 
---- 
-
-### WHAT IS A ZERO TRUST ARCHITECTURE?
-
-> <b> The Zero Trust Architecture approach assumes that no connection, user, or asset is trustworthy until verified. Conversely, the traditional perimeter security paradigm trusts connections once authenticated and grants them access to the entire network, leaving enterprise assets potentially open to cybercriminals. Transformative and time intensive, ZT projects build upon and rework existing architecture. </b>
-
-<b>Zero Trust Architecture</b> is an evolving concept that at present has no certifications or practical standards. Many enterprises rely on certifications such as International Organization for Standardization (ISO) compliance, and the absence of well-defined parameters in the case of ZT creates a measure of confusion.
-
-Adding to the confusion, some vendors label a product or a service as a complete ZT solution, ignoring the basic premise that ZT is an approach that utilizes existing and new products and services but does not reside in a particular set of products or services. Worse, many will apply this practice of “zero trust washing” to legacy products despite missing core properties.
-
-Various <b>Zero Trust Frameworks</b> and approaches are available. ZT is a concept, but the basics of a ZT framework have been defined by the National Institute of Standards and Technology (NIST) and by analyst firms such as Gartner, Forrester, IDC, and ESG.
-
-* In its special publication Zero Trust Architecture, NIST discusses how the U.S. government is employing ZT strategies. The 50-page document defines the basics of an ideal ZT implementation and offers federal government deployment scenarios and use cases. While Gartner, Forrester, IDC, ESG, and other analyst firms are in agreement with NIST on the term “zero trust” and many definitions, approaches, and frameworks, these firms differ in terminology for many of the same concepts
-
-* For example, Gartner uses the term Secure Access Service Edge (SASE) to describe the combination of Cloud Access Security Broker (CASB), secure web gateway (SWG), and advanced virtual private network (VPN) while Forrester calls it Zero Trust Edge (ZTE).
-
-Analyst firms are beginning to offer roadmaps along with valuable guidance, and organizations can find excellent information from those sources to start their ZT journey.
-
-
-<b>Zero Trust</b> starts with a <b>set of principles</b> that each enterprise implements according to its business and security needs.
-
-* Consider all data and services as resources – many different classes of devices and services make up today’s networks. Services such as SaaS, cloud services, and personal devices that access enterprise resources are candidates for inclusion under the ZT umbrella.
-* Do not trust network location or identity – traditional perimeter-only security operates with a single door for users to gain access to enterprise resources. Once authenticated, a user gains broad access to enterprise-owned assets. This practice opens the door for malicious actors as well. Once they gain access, they can move laterally throughout the network, installing malware and ransomware as they go.
-* Grant access to a resource for only one session – establish trust before granting access and give the lowest level of privileges to get the task done.
-* Determine access based on a dynamic policy – policy is a set of access rules assigned to a subject, asset, or application. Establish policy based on the needs of your business and the amount of risk you can accept. A dynamic policy may include continuously monitored risk levels of users, devices, and behavioral attributes such as observed usage patterns. It may also include environmental attributes such as network location, time, and active attacks.
-* Presume no asset is inherently trustworthy – evaluate the security posture of the asset during a resource request using a continuous monitoring system. Include personal devices as well, selecting the level of access these devices will have. This is not as radical as it seems, because of how quickly proven secure servers can be exploited through vulnerability disclosures or a change in a small component, such as an open-source library inclusion.
-* Verify trust continuously – trust is not a fixed state. If user or device risk increases, take action immediately by terminating connections or resetting accounts.
-* Strictly enforce authentication and authorization – use dynamic principles to constantly scan, assess threats, adapt, and reevaluate trust during communications. Establish an identity, credential, and access management system (ICAM), including multifactor authentication (MFA) for applicable resources. Base policy reevaluation on time, unexpected activity, or a request for a new resource, for example.
-* Collect as much information as possible – information about asset security posture, network traffic, and requests for access are extremely valuable. Use them to gain insight to improve security policies and enforcement.
+----
+### INTRODUCING TREND MICRO ZERO TRUST SECURE ACCESS
 
 {{< youtube id="2cpAYkrpQxk" >}}
 
+As part of Trend Micro Vision One™, Trend Micro Zero Trust Secure Access follows the principles of Zero Trust networking. This strengthens your overall security posture by enforcing strong access control permissions from multiple identity services across the organization.
+
+Instead of granting access to the entire network, as a VPN does, Zero Trust Secure Access provides a gateway to specific applications and resources, restricting access to everything within the network that is not being employed. If valid user credentials are stolen, the level of access they will grant to the organization can be contained, effectively reducing the blast area of any attack.
+
+![Diagram](/images/ztsa1.png)
+
+--- 
+#### SECURES ACCESS TO THE INTERNET
+
+- <b>Provides agent and agentless protection for secure web browsing and unsanctioned app access.</b>
+
+- <b>Presents highly contextualized data to Trend Micro Vision One for greater visibility.</b>
+
+- <b>Offers visibility into internet access and browsing to return security and policy control.</b>
+
+- <b>Protects both corporate and bring-your-own (BYO) devices.</b>
+ 
+- <b>A native part of Trend Micro Vision One.</b>
+
+- <b>Powered by Trend Micro™ Web Reputation Service, Trend Micro Research, and Trend Micro Vision One™ Risk Insights.</b>
+
+#### SECURES ACCESS TO THE PRIVATE APPLICATIONS
+
+- <b>Provides agent and agentless access with detailed control options, for easy end-user access to corporate apps and resources.</b>
+
+- <b>Reduces the implicit trust of VPNs for greater risk assessment.</b>
+
+- <b>Delivers authenticated and secure just-in-time access to apps and resources for greater protection.</b>
+
+- <b>Reduces the blast area if there is a threat by limiting access to only specific parts of the network.</b>
+ 
+- <b>Provides continuous risk assessment powered by Trend Micro Vision One Risk Insights.</b>
+
+- <b>Controls connections to apps and resources with continuous risk assessment – dynamically allowing and revoking access as risk profiles change.</b>
+
+#### CONTINUOUS RISK ASSESSMENT
+
+As we continue to measure cyber security risk more closely to business risks, we can see that it is not a ‘one and done’ concept.
+
+Indeed, risk is always changing and must be continuously assessed to be useful as a mechanism to improve security posture. Trend Micro Vision One Risk Insights provides that function of continuous risk assessment for Zero Trust Secure Access.
+
+At regular intervals and dynamically in real-time, risk rating data from Risk Insights is used to evaluate current connections between users, devices, and applications. If at any point the risk rating exceeds customizable thresholds, the connection is blocked, and the network is protected against exposure. When the risk returns to within tolerance, the connection can be reestablished, and operations can continue securely.
+
+---
+### RISK INSIGHTS
+#### Expose and prioritize risks for better decision making
+As part of Trend Micro Vision One™, Trend Micro Zero Trust Secure Access follows the principles of Zero Trust networking. This strengthens your overall security posture by enforcing strong access control permissions from multiple identity services across the organization.
+
+Threat actors have become more stealthy and sophisticated, utilizing complex techniques to compromise devices and spoof identities.
+This allows criminals to spread attacks laterally throughout an organization’s network to steal sensitive data and often demand a ransom for its retrieval.
+
+##### Security is job zero
+This changing threat landscape means that beginning your cyber health journey no longer begins and ends by simply installing a cybersecurity product. IT teams need to adopt a Zero Trust strategy. While there is an “inherent trust” organizations instill on their architecture, Zero Trust prohibits attackers from piggybacking on that institutionalized trust.
+
+##### Employing a Zero Trust strategy
+This approach helps IT teams thwart attackers by limiting access to resources and only allowing access via trusted, verified devices. Employing a Zero Trust strategy requires continuous and in-depth monitoring of devices and a sufficient level of identity health.
+
+##### Addressing the needs of Zero Trust
+As most modern access control solutions perform only cursory posture checks and only perform this duty during the initial connection, decision makers require greater visibility and insight into risks in order to transform a “trust strategy” into a Zero Trust strategy.
+
+----
+#### INTRODUCING TREND MICRO RISK INSIGHTS
+Risk Insights equips security teams with the ability to continually monitor the security posture of their organization, exposing unseen risks to make better decisions. Across the organization, Risk Insights assists:
+
+- <b> SOC/Security teams –
+Uncover undiscovered risks and gain insight into what needs immediate attention. View risks by user, device, and application, or at the organization level.
+
+- <b> CSO/Leadership –
+Understand the organization’s security posture, whether it is improving or declining, and gain visibility into how it compares to peers in your industry, region, or organization size.
+
+- <b> Network security –
+Incorporate health scores into access control solutions and make more informed automated decisions when following a Zero Trust strategy.
+
+![Diagram](/images/ztsa2.png)
+
+----
+#### ADVANTAGES
+#### Increase visibility into threat and posture risks
+
+- <b> Provides continuous risk analysis of devices, identities, content, and applications. This includes active risks such as:</b>
+
+    -- Suspicious or anomalous user activity
+
+    -- Indicators of attack (IoA), behaviors, or detections
+
+    -- Potential risks such as vulnerabilities, exposed identities, or risky cloud app access
+- <b> Allows for deeper insight into your organization’s health level—pulled from endpoint, email, mobile, network XDR telemetry, and other data sources—to uncover hidden risks</b>
+- <b> Leverages intel from leading Trend Micro vulnerability research experts to detect unpatched operating system and application vulnerabilities within your environment</b>
+- <b> Instills a Zero Trust strategy throughout your organization by providing your security team with continuous health assessments of your identities and devices</b>
+
+---
+### Prioritization and automation for better risk-based decisions
+- <b> Highlights the most critical risks affecting your organization so your team can maintain a trusted security environment</b>
+- <b> Uses global and local exploit intelligence to prioritize patching of device vulnerabilities. Identifies if prevention rules are available to protect against exploits until Patch deployment.</b>
+- <b> Mitigates and contains risks across the infrastructure from just one console.</b>
+- <b> Shares health scores with Trend Micro and third-party access control solutions—including Zero Trust Network Access (ZTNA) and Secure Access Service Edge (SASE) to make automated and well-informed decisions.</b>
+
+![Diagram](/images/ztsa3.png)

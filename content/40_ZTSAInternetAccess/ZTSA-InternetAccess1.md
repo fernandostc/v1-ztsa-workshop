@@ -7,7 +7,7 @@ pre: "<b>4.1 </b>"
 ## ZTSA – Internet Access Control 
 
 ### Activating the ZTSA Module
-> If you already deployed the ZTSA Module and still have access to the demo environment -Zero Trust Private Access-, you can skip this step.
+<b>If you already deployed the ZTSA Module and still have access to the demo environment -Zero Trust Private Access-, you can skip this step.</b>
 
 To allow the users to access the Internet using the Zero Trust Infrastructure, the ZTSA Module is required to be installed and activated. 
 
@@ -24,7 +24,7 @@ The ZTSA Module deployment requires normally 3 to 5 minutes to be finished. Afte
 ### ZTSA – Internet Access Control - Creating the First Policy
 Configure an internet access control rule to protect your users' internet access whether they are on or off your corporate network.
 
-> <b>Internet Access Control rule</b>
+ <b>- Internet Access Control rule</b>
 
         _Basic information
         Rule Name: Zero Trust Internet Access Rule
@@ -53,6 +53,6 @@ You can access the following URL (https://wicar.org/test-malware.html) and then 
 
 Now its time to access malicious URLs and download malicious files. You can do this test using the files available on https://wicar.org/test-malware.html. 
 
-> Creating the Internet Access Control rule and testing the effectiviness of this component.
+<b>- Creating the Internet Access Control rule and testing the effectiviness of this component.</b>
 
 {{< youtube id="-EwlmWmN3WU" >}}
