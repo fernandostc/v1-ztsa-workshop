@@ -26,7 +26,6 @@ Parameters:
     Type: 'String'
   WindowsPassword:
     Description: AWS - Please enter password to be used when accessing the Windows Instances (8 characters including capital case, lower cases and special characters).
-    Default: Trend@00p$
     Type: 'String'
   RegistrationToken:
     Type: String
